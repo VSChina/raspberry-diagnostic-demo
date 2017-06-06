@@ -24,17 +24,17 @@
 
 ![DHT22 Connection](./imgs/dht22-connect.png)
 
-2. The physical connection is like this (We use 2 5KΩ resistors instead of a 10KΩ resistors)
+2. The physical connection is like this (We use 2*5KΩ resistors instead of a 10KΩ resistors)
 
 ![DHT22 Connection](./imgs/physical-connection.jpg)
 
-### Step 3: Register and obtain a device connection string from Azure IoTHub
+### Step 3: Register and obtain a device connection string from Azure IoT Hub
 
-1. If you do not have an IoTHub on Azure
+1. If you do not have an IoT Hub on Azure
 + You can refer the parts: "Create an IoT hub" and "Register device in the IoT hub for the your device" in [this article](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-kit-node-get-started) 
 + After you have done, you will obtain your device connection string
 
-2. If you already have an IoTHub on Azure
+2. If you already have an IoT Hub on Azure
 + You can refer the part: "Register device in the IoT hub for the your device" in [this article](https://docs.microsoft.com/en-us/azure/iot-hub/iot-hub-raspberry-pi-kit-node-get-started) 
 + After you have done, you will obtain your device connection string
 
@@ -84,7 +84,7 @@ npm install
 node app.js
 ```
 
-6. You should see messages sending to the IoTHub like below. 
+6. You should see messages sending to the IoT Hub like below. 
 
 ![Sending Messages](./imgs/sending-messages.png)
 
