@@ -1,0 +1,25 @@
+{
+    "name": "e2e-diag-device",
+    "version": "0.0.1",
+    "description": "Raspberry Pi 3 IoT end-to-end Diagnostic Demo",
+    "bin": {
+        "e2e-diag-device": "./app.js"
+    },
+    "author": "Microsoft Corporation",
+    "license": "MIT",
+    "dependencies": {
+        "azure-iot-device": "1.1.5",
+        "azure-iot-device-mqtt": "1.1.5",
+        "es5-shim": "^4.5.9",
+        "lodash": "^4.15.0",
+        "node-uuid": "^1.4.7",
+        "node-dht-sensor": "^0.0.32"
+    },
+    "devDependencies": {
+        "jshint": "^2.9.2"
+    },
+    "scripts": {
+        "lint": "jshint --show-non-errors .",
+        "test": "npm -s run lint"
+    }
+}
