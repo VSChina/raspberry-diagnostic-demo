@@ -8,7 +8,7 @@ var Message = require('azure-iot-device').Message;
 var Uuid = require('node-uuid');
 var dht = require('node-dht-sensor');
 
-var client = Client.fromConnectionString('HostName=Win10IoTCoreRaspberryDiag.azure-devices.net;DeviceId=Raspberry;SharedAccessKey=ZWtkSkV0KRJNOwyie/ZRTT9f9IEjFN5aDUWFioS1S3o=', {
+var client = Client.fromConnectionString('[Your Device Connection String]', {
     samplingRateSource: 'device',
     samplingRatePercentage: 50,
     samplingStrategy: 'time'
