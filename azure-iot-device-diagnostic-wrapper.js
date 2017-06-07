@@ -82,7 +82,7 @@ Client.prototype.getTwin = function(done, twin) {
             twin.prependListener('properties.desired', function(delta) {
                 if (delta['diag_enable'] !== undefined) {
                     _this._diagnostic.diagEnable = delta['diag_enable'];
-                    if (_this._diagnostic.diagEnable === "true") {
+                    if (_this._diagnostic.diagEnable.toString() === "true") {
                         _this._diagnostic.diagEnable = true;
                     } else {
                         _this._diagnostic.diagEnable = false;
