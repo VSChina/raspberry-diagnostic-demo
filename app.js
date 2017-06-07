@@ -9,8 +9,7 @@ var Uuid = require('node-uuid');
 var dht = require('node-dht-sensor');
 
 var client = Client.fromConnectionString('[Your Device Connection String]', {
-    samplingRateSource: 'device',
-    samplingRatePercentage: 50,
+    samplingRateSource: 'service',
     samplingStrategy: 'time'
 });
 
